@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #1961ac;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+nav {
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+nav img {
+  width: 15rem;
+}
+
+.main-title {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin: 3.5rem;
+  font-size: 46px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+form input {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 15px;
+  width: 250px;
+  color: #1961ac;
+  font-size: 22px;
+}
+
+form label {
+  margin-bottom: 1rem;
+  font-size: 22px;
+}
+
+form button {
+  color: #1961ac;
+  padding: 1.25rem 2.5rem;
+  border-radius: 15px;
+  background-color: #ffce65;
+  transition: all 0.25s ease-in-out;
+}
+
+form button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+#cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 362px;
+  height: 492px;
+  border-radius: 47px;
+  background-color: #e4b043;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 9px 10px 21px -12px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 9px 10px 21px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 10px 21px -12px rgba(0, 0, 0, 0.75);
+}
+
+#card h1 {
+  margin: 2.5rem;
+  font-size: 32px;
+}
+
+#card img {
+  width: 314px;
+  height: 394px;
+  border-radius: 47px;
+  margin-bottom: 5rem;
+  opacity: 75%;
+  transition: all 0.5s ease-in-out;
+}
+
+#card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  opacity: 100%;
+}
+
+#card:hover img {
+  opacity: 100%;
+  transition: all 0.5s ease-in-out;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #1961ac;
+  background: #ffce65;
+}
+
+::selection {
+  color: #1961ac;
+  background: #ffce65;
+}
+
+@media only screen and (max-width: 770px) {
+  .main-title {
+    text-align: center;
+  }
+
+  #card {
+    width: 262px;
+    height: 350px;
+  }
+
+  #card img {
+    width: 214px;
+  }
+
+  #card h1 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .main-title {
+    font-size: 32px;
+  }
+}
+
